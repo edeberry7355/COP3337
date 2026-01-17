@@ -2,7 +2,7 @@
 
 ## Ch1 Review
 
-**Unix Commands**
+### Unix Commands
 
 * `mkdir <directory_name>` - (make directory) creates a folder
 * `cd <directory_name>` - (change directory) changes the current directory
@@ -33,10 +33,10 @@
 ## Programming errors
 
 * **Syntax (Compile Errors)**
-  * Errors that are <u>detected by the compiler</u>. Mistyping a keyword, omitting necessary punctuation, etc.
+  * Errors that are ***detected by the compiler***. Mistyping a keyword, omitting necessary punctuation, etc.
   * *Example causes:* missing braces, semicolons, and quotation marks, and misspelling names.
 * **Runtime errors**
-  * Cause a program to <u>terminate abnormally</u>.
+  * Cause a program to ***terminate abnormally***.
   * *Example causes:* Wrong type of input, division by zero.
 * **Logic errors**
   * Occur when program does not perform the way it was intended.
@@ -55,7 +55,7 @@
 * In C++, variables must be declared with a specific data type Ex.:
 ``int count``, ``double radius = 11.2``
 
-### An alternative syntax for declaring and initializing variables:
+### An alternative syntax for declaring and initializing variables
 
 ```cpp
 // C++ allows:
