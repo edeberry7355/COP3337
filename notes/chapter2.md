@@ -261,9 +261,20 @@ cout << (s1 <= s2) << endl;  // Displays 1 (means true)
 
 ## Named Constants
 
-* A **named constant** is
+* A **named constant** represents permanent data that never changes.
 
-## Find the Output (1) (A+)
+Syntax: `const datatype CONSTANTNAME = value;`
+
+* A constant must be declared and initialized in the same statement
+* By convention, constants are named in **uppercase**: `PI`, not `pi` or `Pi`
+
+Note: there are three benefits of using constants:
+
+1. You don't have to repeatedly type the same value.
+2. If the constant value needs to be changed, you need change it only in a single location in the source code.
+3. Descriptive constant names make the program easy to read.
+
+## A+ Find the Output (1)
 
 ```cpp
 std::string s0("R");
@@ -274,3 +285,5 @@ s2 += 'R';
 s2 += (s1 < s2) ? "Y" : s1;
 std::cout << s2 << "M" << std::endl;
 ```
+
+Output: `RGRYM`
