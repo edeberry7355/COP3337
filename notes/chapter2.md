@@ -14,6 +14,17 @@
   * Ex. `g++ first_program.cpp`
 * `./<executable_file>` - runs output file
   * Ex. `./a.out`
+* `mv <source_file> <destination_folder>` - moves file into specified folder
+  * Ex. `mv ../documents/notes.txt` - moves notes.txt from documents folder one level up to current directory
+  * `mv /home/user/downloads/data.zip /home/user/documents/work/`
+  * `mv ~/Downloads/data.zip ~/Documents/Work/` - (`~`) shortcut represents home folder
+
+## Git commands
+
+1. `git status`
+2. `git add <filename>` (now file is in staging area)
+3. `git commit -m "put commit message here`
+4. `git push`
 
 ## Some of the Special Characters
 
@@ -248,9 +259,18 @@ cout << (s1 <= s2) << endl;  // Displays 1 (means true)
 4. Unintended integer division
 5. Forgetting header files
 
-## Git commands
+## Named Constants
 
-1. `git status`
-2. `git add <filename>` (now file is in staging area)
-3. `git commit -m "put commit message here`
-4. `git push`
+* A **named constant** is
+
+## Find the Output (1) (A+)
+
+```cpp
+std::string s0("R");
+std::string s1 = "G";
+std::string s2 = s0 + s1;
+s2 += 'R';
+// ifThis ? isTrueDoThis : isFalseDoThis
+s2 += (s1 < s2) ? "Y" : s1;
+std::cout << s2 << "M" << std::endl;
+```
