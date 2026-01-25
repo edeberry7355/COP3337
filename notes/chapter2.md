@@ -158,7 +158,6 @@ int main() {
 | \r | Carriage Return | 13 |
 | \\\ | Backslash | 92 |
 | \\" | Double Quote | 34 |
-| | | |
 
 ### Escape Sequences
 
@@ -194,7 +193,6 @@ string message = "Programming is fun"
 | `length()` | Returns the number of characters in this string. |
 | `size()` | Same as length() |
 | `at(index)` | Returns the character at the specified index from this string |
-| | |
 
 * The functions in the string class can only be invoked from a specific string instance
 * For this reason, these functions are called **instance functions**
