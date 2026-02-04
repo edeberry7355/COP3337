@@ -4,11 +4,25 @@
 
 ## Functions Recap
 
-1. Function name -
-2. Formal parameters -
-3. Parameter List -
-4. Functions signature - header without return value type
-5. Return Value Type -
+```cpp
+int max(int num1, int num2) {
+    int result;
+
+    if (num1 > num2)
+        result = num1;
+    else 
+        result = num2;
+    return result;
+}
+```
+
+1. Function name - `max`
+2. Formal parameters - `num1` and `num2`
+3. Parameter List - `int num1, int num2`
+4. Functions signature (header without return value type) - `max(int num1, int num2)`
+5. Return Value Type - `int`
+6. Function header - `int max(int num1, int num2)`
+7. Function body - Implements the function
 
 ## Passing Arguments by Value
 
