@@ -4,7 +4,7 @@
 
 Each time a function calls another function, an entry is **pushed** onto the stack. This entry, called a **stack frame**, contains the **return address** that the called function needs in order to return to the calling function.
 
-When the function returns (and no longer needs its automatic variables) its stack frame is **popped** from the stack, and those local automatic variables are no longer known to the program.
+When that function returns (and no longer needs its automatic variables) its stack frame is **popped** from the stack, and those local automatic variables are no longer known to the program.
 
 ## When a Function Calls Itself
 
