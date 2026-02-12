@@ -24,7 +24,7 @@ void combination_helper(std::string& s, int n, int i) {
         std::cout << s << std::endl;
         return;
     }
-    while (s[i] <= 'z') {
+    while (s[i] <= 'c') {
         // Recursive call for the next character
         combination_helper(s, n, i + 1);
         s[i]++;
