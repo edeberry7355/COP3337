@@ -112,3 +112,7 @@ ClassName objectName(arguments);
 // Create an object using the no-arg constructor
 ClassName objectName;
 ```
+
+## For 15_Car_class
+
+TODO: constructor with arguments
