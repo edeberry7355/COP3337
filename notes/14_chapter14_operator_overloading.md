@@ -48,3 +48,23 @@ Because you should be able to put r[0] on the ...
 ClassName ClassName::operator+(const ClassName&)
 
 // Add the current object that calls the plus and the second one in the argument, returns an object of the same class
+
+## Rule of Three
+
+1. Copy constructor
+2. Assignment operator
+3. Destructor
+
+These three things need to be .. when using `=` to set a pointer to another pointer.
+
+## Friend functions and classes
+
+Cannot make a non-member function constant
+Use `friend` to give  anon-member function access private properties of the class
+
+## Example
+
+```cpp
+int a = 99999*99999;
+// this won't work because integer has a limit in memory
+```
