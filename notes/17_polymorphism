@@ -1,0 +1,41 @@
+# Chapter _: Polymorphism
+
+## ...
+
+...
+
+## Polymorphic Type
+
+If a function defined
+On the other hand
+...
+
+## Practice
+
+Passing by value, so it will convert to parent and print parent function when calling p(b)
+
+Can fix by:
+
+* Passing by reference
+* Using virtual in the parent for virtual
+
+## Answer the following questions
+
+1. What is the
+2. What will be
+3. What will be
+
+## Abstract Classes
+
+A class that is too general is called an abstract class
+
+* An abstract class cannot be used to create objects. An abstract class can contain abstract functions, which are implemented in concrete derived classes
+* In C++, abstract functions are called
+* You cannot make an object of the class because it is too vague to be defined
+
+    virtual double getArea() = 0;
+
+### Notes
+
+* If you derive from an abstract class and don't override, the child will still be an abstract class.
+* Object should be passed by reference or a pointer, if it's passed by value it won't work.

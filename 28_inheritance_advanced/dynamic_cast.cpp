@@ -41,15 +41,39 @@ public:
 
 class Knife : public Weapon {
 public:
+    Knife(bool stainless = false) : is_stainless(stainless) {
+
+    }
     void use() override {
         std::cout << "STAB!" << std::endl;
     }
+    bool getIsStainless() {
+        return is_stainless;
+    }
+private:
+    bool is_stainless;
 };
 
 class Player {
 public:
+    // takes a reference to the base class
     void use(Weapon& weapon) {
-        weapon.use();
+        // use dynamic casting to cast the base class object into any derived class object
+        // will have a non-null value if it goes well, or otherwise have a null value
+        // Dynamic casting
+        // inside parenthesis is the address of the weapon
+        Knife* knife = dynamic_cast<Knife*>(&weapon); // casting of a parent address to child pointer
+        if (knife != nullptr && knife->getIsStainless()) {
+            std::cout << "Stainless knife. Can use it." << std::endl;
+            weapon.use();
+        }
+        // if it is a knife but is not stainless steel
+        else if (knife != nullptr && !knife->getIsStainless()) {
+            std::cout << "Cannot use non stainless knife." << std::endl;
+        }
+        else {
+            std::cout << "Not a knife." << std::endl;
+        }
     }
 };
 
@@ -70,7 +94,7 @@ int main (void) {
     std::cout << "Player\n";
     Player player;
     Bazooka bazooka;
-    Knife knife;
+    Knife knife(true);
 
     player.use(gun);
     player.use(mg);
